@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(to left, darkcyan, white);
+    
+}
+
+.Enlace {
+    color: blueviolet;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    transition: transform 0.5s, text-shadow 0.5s ;
+}
+
+.Enlace:hover {
+    transform: scale(1.2);
+    text-shadow: 3px 3px 3px gray;
+}
+
+nav{
+    background-color: white;
+    width: 300px;
+    border-radius: 30px;
+    position: absolute;
+    left: 500px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+@media (max-width: 1205px) {
+    nav{
+        width: 280px;
+    }
+
+    .Enlace {
+        padding: 8px 20px;
+    }
+
+}
+
+@media (max-width: 1103px) {
+    nav{
+        width: 250px;
+        left: 400px;
+    }
+
+    .Enlace {
+        padding: 5px 15px;
+    }
+}
+
+@media (max-width: 1003px) {
+    nav{
+        width: 215px;
+        left: 380px;
+    }
+
+    .Enlace {
+        padding: 3px 9px;
+    }
+}
+
+.foto {
+    height: 150px;
+    width: 120px;
+    border-radius: 200% 0% 300%;
+    box-shadow: 5px 5px 5px blueviolet;
+    border-style: solid;
+    border-color: white;
+    position: absolute;
+    left: 25px;
+    top: 100px;
+    transition: border-radius 1s;
+}
+
+.foto:hover {
+    border-radius: 50% 5% 40%;
+}
+
+.Text1 {
+    position: relative;
+    top: -200px;
+    text-align: center;
+    font-size: calc(15px + 2vmin);
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+.textos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.text2 {
+    position: relative;
+    top: -800px;
+    font-size: calc(1px + 2vmin);
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: blueviolet;
+}
+
+.textos2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
